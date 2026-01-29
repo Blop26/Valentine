@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Journey ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div id="lock-screen" class="container">
+            <h1>🔒 Private Access</h1>
+            <p>Enter our anniversary date to unlock:</p>
+            <input type="date" id="anniversaryDate">
+            <button class="btn" onclick="unlockSite()">Unlock Journey</button>
+        </div>
+
+        <div id="main-content" class="container" style="display:none;">
+            <h1>Our First Month Together</h1>
+            <div class="photo-placeholder">
+                <img src="month1.jpg" alt="Our First Month" class="journey-img">
+            </div>
+            <p>It all started here... and every day since has been better than the last.</p>
+            <button class="btn" onclick="showPage('page3')">Next →</button>
+        </div>
+
+        <div id="page3" class="container" style="display:none;">
+            <h1>Why You?</h1>
+            <p>Your smile, our time on [Insert Date], and my favorite memory.</p>
+            
+            <div class="photo-grid">
+                <img src="smile.jpg" alt="Your Smile" class="grid-img">
+                <img src="us1.jpg" alt="Us" class="grid-img">
+                <img src="us2.jpg" alt="Memory" class="grid-img">
+            </div>
+
+            <button class="btn" onclick="showPage('page4')">One more thing... →</button>
+        </div>
+
+        <div id="page4" class="container" style="display:none;">
+            <h1 id="questionText">Will you be my Valentine?</h1>
+            <p>I love you so much!</p>
+            <div class="btn-group">
+                <button id="yesBtn" class="btn yes-btn" onclick="celebrate()">YES</button>
+                <button id="noBtn" class="btn no-btn" onclick="growYes()">No</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
