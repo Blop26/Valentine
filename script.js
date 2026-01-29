@@ -103,7 +103,7 @@ function createPhoto() {
     photo.classList.add('falling-photo');
 	photo.style.width = "60px";
     
-   photo.innerHTML = '<img src="images/photobooth.jpg" style="width:100%; height:100%; object-fit: cover; border-radius: 2px;">';
+   photo.innerHTML = '<img src="photobooth.jpg" style="width:100%; height:100%; object-fit: cover; border-radius: 2px;">';
     
     photo.style.left = Math.random() * 90 + "vw"; // Keeps them away from the very edge
     photo.style.top = "-15vh"; // Starts a bit higher up
@@ -169,4 +169,5 @@ function toggleMusic() {
         music.pause();
         btn.innerHTML = "🔇";
     }
+
 }
